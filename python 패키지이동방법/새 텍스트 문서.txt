@@ -1,0 +1,26 @@
+가장 권장하는 방법 (Requirements 파일 활용)
+가장 표준적인 방법은 현재 설치된 패키지 리스트를 텍스트 파일로 만든 뒤, 새 PC에서 그 파일을 읽어들여 설치하는 것입니다.
+
+STEP 1: 기존 PC에서 리스트 추출
+터미널(CMD 또는 PowerShell)을 열고 다음 명령어를 입력하세요.
+
+pip freeze > requirements.txt
+이 명령어를 실행하면 현재 폴더에 requirements.txt라는 파일이 생깁니다. 이 안에는 설치된 패키지 이름과 버전 정보가 모두 들어있습니다.
+
+STEP 2: 새 PC로 파일 전달
+생성된 requirements.txt 파일만 메일, USB, 혹은 클라우드로 새 PC에 옮기세요.
+
+STEP 3: 새 PC에서 한 번에 설치
+새 PC의 터미널에서 해당 파일이 있는 폴더로 이동한 뒤 다음을 입력합니다.
+
+pip install -r requirements.txt
+그러면 Python이 알아서 리스트를 읽어 모든 패키지를 다운로드하고 설치합니다.
+
+3. 만약 인터넷이 안 되는 환경이라면?
+만약 새 PC가 인터넷 연결이 안 되어 리스트를 통한 설치가 불가능하다면, 패키지 파일(.whl) 자체를 다운로드해서 옮기는 방법도 있습니다.
+
+기존 PC: pip download -r requirements.txt -d ./packages (패키지 파일들을 추출)
+
+이동: packages 폴더 전체를 새 PC로 이동
+
+새 PC: pip install --no-index --find-links=./packages -r requirements.txt

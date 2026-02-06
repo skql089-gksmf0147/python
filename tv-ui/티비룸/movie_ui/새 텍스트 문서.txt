@@ -1,0 +1,9 @@
+
+묶음
+pyinstaller --noconfirm --onefile --windowed --add-data "player.py;." --add-data "crawler.py;." --collect-all customtkinter --name "티비룸" ui.py
+
+
+pyinstaller --noconfirm --onefile --windowed --collect-all customtkinter --name "티비룸" ui.py
+
+
+pyinstaller --noconsole --onefile player.py
