@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# build artifacts
+build/
+dist/
+*.exe
+*.pkg
+
+# ffmpeg & binaries
+ffmpeg.exe
+
+# venv
+venv/
+.env
