@@ -1,4 +1,0 @@
-pyinstaller --noconfirm --onefile --windowed --add-data "player.py;." --add-data "crawler.py;." --collect-all customtkinter --name "UltraMediaCenter" ui_copy.py
-
-
-pyinstaller --noconfirm --onefile --windowed --collect-all customtkinter --name "UltraMediaCenter" ui_test.py
