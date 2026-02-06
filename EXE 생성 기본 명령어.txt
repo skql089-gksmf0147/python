@@ -1,0 +1,67 @@
+
+삭제명령
+pip uninstall easyocr
+
+✅ 1. pyinstaller 설치
+
+터미널(명령 프롬프트)에서 실행:
+
+pip install pyinstaller
+
+
+✅ 2.EXE 생성 기본 명령어
+
+pyinstaller --noconsole --onefile Excel.py
+
+media.json 포함 EXE 생성 명령어
+
+pyinstaller --noconfirm --onefile --windowed --collect-all customtkinter --name "Main" ui_test.py
+
+pyinstaller --onefile --noconsole --add-binary "app\ffmpeg.exe;." app\main.py
+
+youtubo.py   는 파일명입니다 파일명만 수정해서 실행하세요
+
+✅ 3. 결과물 위치
+
+명령어 실행 후:
+
+dist/youtubo.exe
+
+여기에 완성된 실행파일이 생깁니다.
+build 폴더는 중간 빌드 데이터라 지워도 됩니다.
+
+설치명령어 
+
+pip install pip
+
+pip install  selenium
+
+pip install webdriver_manager
+
+업그레이드 명령어
+pip install --upgrade selenium
+
+pip list    설치버전 확인 리스트
+
+pyinstaller
+ --onefile ^
+ --noconsole ^
+ --add-binary "app\ffmpeg.exe;." ^
+ app\main.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
