@@ -1,16 +1,11 @@
-# Python
-__pycache__/
+# PyInstaller artifacts (any depth)
+**/build/
+**/dist/
 *.pyc
-
-# build artifacts
-build/
-dist/
+*.toc
+*.pyz
+base_library.zip
+warn-*.txt
+xref-*.html
 *.exe
-*.pkg
 
-# ffmpeg & binaries
-ffmpeg.exe
-
-# venv
-venv/
-.env
