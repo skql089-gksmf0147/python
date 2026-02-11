@@ -1,11 +1,14 @@
-# PyInstaller artifacts (any depth)
-**/build/
-**/dist/
+# Python
+__pycache__/
 *.pyc
-*.toc
-*.pyz
-base_library.zip
-warn-*.txt
-xref-*.html
-*.exe
 
+# Build
+build/
+dist/
+
+# Executables
+*.exe
+*.pkg
+
+# Virtual env
+venv/
